@@ -1,0 +1,534 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+#comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#pdf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+select{
+    width: 70px; height: 40px
+}
+   
+#table thead {
+    display: none;
+    background-color: transparent;
+}
+
+#text {
+    font-weight: 100;
+    font-size: 17px;
+}
+
+#review-course-textarea {
+    width: 30vw;
+    height: 20vh;
+    padding: 10px 10px;
+}
+
+#load-data-div {
+
+}
+
+.input{
+    width: 40px;height: 30px;
+}
+
+.box2{
+    width: 500px; height: 30px;
+    font-size: medium;
+
+    white-space: pre-wrap;    
+}
+.inline{
+    display: inline-block; 
+}
+
+table{
+    padding: auto;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* LOGIN PAGE STYLING */
+
+#page-title {
+    font-size: 2.5em;
+}
+
+#main-title {
+    font-size: 2.5em;
+    /* margin-bottom: 10%; */
+}
+
+#main {
+    height: 100vh;
+    min-width: 500px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#label{
+    font-size: .5em;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    border-radius: 5px;
+    margin: 5%;
+}
+
+#form > input {
+    height: 12%;
+    width: 60%;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 4% 100%;
+}
+
+#review-course-div {
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    margin-top: 10%;
+}
+
+#review-course-button {
+    margin-top: 12%;
+    height: 50px;
+    width: 120px;
+}
+
+#continue {
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    margin-top: 4%;
+}
+
+#continue > button {
+    height: 115%;
+    width: 8vw;
+    margin: 0px 1%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#continue > button:hover {
+    background-color: rgba(0, 206, 252, 0.25);
+}
+
+#continue > button:active {
+    background-color: rgba(211, 211, 211, 0.655);
+}
+
+#user-role {
+    width: 25%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Graduate Attribute Page Styling */
+
+#main-grad {
+    /* height: 100vh; */
+    /* min-width: 500px;
+    width: 50vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#graduate-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#graduate-table > h1 {
+    margin-top: 50px;
+    font-size: medium;
+}
+
+#graduate-table > p {
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: -2px;
+}
+
+#graduate-table > table {
+    margin: 0 auto;
+    font-size: large;
+    border: 1px solid black;
+    width: 85%;
+}
+  
+td {
+    background-color: #dcebf1;
+    border: 1px solid black;
+    padding: 10px 10px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+th {
+    font-weight: bold;
+    font-size: small;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#logged-in-div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    margin: 1% 2%;
+}
+
+#refresh {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    margin: 1% 2%;
+}
+
+#log-out-button {
+    height: 5vh;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#log-out-button:hover {
+    background-color: rgb(255, 17, 49, 0.5);
+}
+
+#logged-in-username {
+    font-weight: 500;
+}
+
+/* OUTLINE.HTML STYLING */
+
+#outline-top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#outline-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#outline-buttons > button {
+    width: 130px;
+    height: 45px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#outline-buttons > button:hover {
+    background-color: rgba(0, 206, 252, 0.25);
+}
+
+#outline-code-instructor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#outline-code-instructor > div > textarea {
+    width: 180px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 13px;
+    margin-top: -10px;
+}
+
+#outline-code-instructor > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#container_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container_content > table {
+    margin-top: 50px;
+}
+
+#outline-td-label {
+    font-size: 15px;
+    text-align: center;
+}
+
+#outline-important-note {
+    margin-top: 50px;
+    width: 70%;
+    font-weight: 100;
+    color: red;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+#outline-table-title {
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+#outline-first-table tr {
+    display: flex;
+    flex-direction: row;
+}
+
+#outline-first-table tr td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 20vh;
+}
+
+#outline-first-table tr td textarea {
+    width: 80%;
+    height: 60%;
+    padding: 10px 10px;
+}
+
+#ceab-academic-table {
+    width: 80vw;
+}
+
+#ceab-academic-table tr {
+    display: flex;
+    flex-direction: row;
+}
+
+#ceab-academic-table tr td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 20vh;
+}
+
+#ceab-academic-table tr td input {
+    text-align: center;
+    height: 20%;
+    width: 40%;
+}
+
+#ceab-academic-table tr td textarea {
+    width: 80%;
+    height: 60%;
+}
+
+#general-learning-table {
+    width: 90vw;
+}
+
+#general-learning-td-title {
+    width: 10vw;
+}
+
+#outline-notation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    border: 1px solid black;
+    padding: 5px 5%;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+#general-learning-second-table {
+    width: 70vw;
+}
+
+#general-learning-second-table tr td {
+    width: 0%;
+}
+
+#general-learning-second-table tr td select {
+    width: 100%;
+}
+
+#evaluation-table {
+    width: 40vw;
+}
+
+#evaluation-title {
+    margin-top: 80px;
+}
+
+#evaluation-paragraph {
+    width: 80vw;
+    margin-bottom: 0px;
+}
+
+.box {
+    width: 30%; height: 35px;
+    font-size: medium;   
+}
+
+#evaluation-component {
+    width: 50%;
+}
+
+#evaluation-weight {
+    width: 30%;
+}
+
+#evaluation-table tr td input {
+    margin-left: 35%;
+    text-align: center;
+}
+
+#course-topics-table {
+    margin-top: 45px;
+    width: 80vw;
+}
+
+#course-topics-table tr td textarea {
+    width: 80%;
+    height: 50px;
+}   
+
+#course-topics-th2 {
+    width: 20%;
+}
+
+.topics-box {
+    margin-left: 35%;
+    width: 30%;
+    height: 40px;
+    text-align: center;
+}
+
+#outline-last-table {
+    margin-top: 50px;
+    width: 90vw;
+}
+
+#outline-last-table tr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#outline-last-table tr td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 180px;
+    padding: 20px 10px;
+}
+
+#outline-last-table tr td textarea {
+    width: 90%;
+    height: 70%;
+    padding: 10px 10px;
+}
+
+#saveButton {
+    font-size: 1vw;
+    width: 8vw;
+    height: 3vw;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+/* ASSIGN-PROF.HTML STYLING */
+
+#main select {
+    width: 10vw;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#confirm-button {
+    margin-top: 30px;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#confirm-button:hover {
+    background-color: rgba(0, 206, 252, 0.25);
+}

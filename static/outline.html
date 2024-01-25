@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <div id="logged-in-div">
+    <h3 id="logged-in-username"></h3>
+    <button id="log-out-button">Log out</button>
+  </div>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Outlines Manager</title>
+  <link rel="stylesheet" href="styles.css">
+
+ 
+</head>
+
+<body>
+  <div class="container_content" id="container_content">
+    <div id="outline-top-container">
+
+      <h1 id="main-title">Add Course Outline</h1>
+
+      <div id="outline-buttons">
+        <button id="load-data">Load saved data</button>
+      </div>
+      <p id="load-data-div"></p>
+
+      <div id="outline-code-instructor">
+        <div>
+          <h3 id="text">Course Code</h3>
+          <textarea type="text" id="courseCode"></textarea>
+        </div>
+        <div>
+          <h3 id="text">Instructor</h3>
+          <textarea type="text" id="instructor"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <table id="outline-first-table">
+      <tr>
+        <td>
+          <h2 id="text">Description</h2>
+          <textarea type="text" id="description"></textarea>
+        </td>
+        <td>
+
+          <h2 id="text">Antirequisite</h2>
+          <textarea type="text" id="antirequisite"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h2 id="text">prerequisite</h2>
+          <textarea type="text" id="prerequisite"></textarea>
+        </td>
+        <td>
+          <h2 id="text"> Corequisite </h2>
+          <textarea type="text" id="corequisite"></textarea>
+        </td>
+      </tr>
+    </table>
+
+
+    <p id="outline-important-note"
+      readonly> Unless you have either the requisites for this course or written special permission from your Dean to enroll in it, you will be removed from this course and it will be deleted from your record. This decision may not be appealed. You will receive no adjustment to your fees in the event that you are dropped from a course for failing to have the necessary prerequisites.</p>
+
+    <h2 id="outline-table-title">CEAB Academic Units</h2>
+
+    <table id="ceab-academic-table">
+      <tr>
+        <td>
+          <h2 id="text"> Engineering Science</h2>
+          <input type="number" placeholder="in percentage" id="engineeringScience" class="ceab-input">
+        </td>
+        <td>
+          <h2 id="text">Engineering Design</h2>
+          <input type="number" placeholder="in percentage" id="engineeringDesign" class="ceab-input">
+        </td>
+        <td>
+          <h2 id=text>Credits </h2>
+          <input type="number" id="credits" class="ceab-input">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h2 id="text"> Required Textbook:</h2>
+          <textarea type="text" id="requiredTextbook"> </textarea>
+        </td>
+        <td>
+          <h2 id="text">Other Required References:</h2>
+          <textarea type="text" id="otherRequiredReferences"> </textarea>
+        </td>
+        <td>
+          <h2 id="text">
+            Recommended References:
+          </h2>
+          <textarea type="text" id="RecommendedReferences"></textarea>
+        </td>
+      </tr>
+    </table>
+    <br>
+
+
+    <p>theres two tables for below</p>
+    <h2 id="outline-table-title"><a href="/view-grad-atr.html">General Learning Objectives (CEAB Graduate Attributes)</a></h2>
+
+    <table id="general-learning-table">
+      <tr>
+        <td type="text"> Knowledge Base</td>
+        <td>
+
+          <textarea type="text" id="knowledgeBasetxt"></textarea>
+        </td>
+
+        <td type="text"> Use of Engineering Tools</td>
+        <td>
+          <textarea type="text" id="engineeringTooltxt"></textarea>
+        </td>
+        <td type="text"> Impact on Society and Enviroment</td>
+        <td>
+          <textarea type="text" id="impactSocietyEnvironmenttxt"></textarea>
+
+        </td>
+      </tr>
+      <tr>
+        <td type="text"> Problem Analysis</td>
+
+        <td>
+          <textarea type="text" id="problemAnalysistxt"></textarea>
+        </td>
+        <td type="text"> Individual and Team work</td>
+        <td>
+          <textarea type="text" id="individualTeamWorktxt"></textarea>
+        </td>
+        <td type="text">Ethics and Equity</td>
+        <td>
+          <textarea type="text" id="ethicsEquitytxt"></textarea>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td type="text"> Investigation</td>
+        <td>
+          <textarea type="text" id="investigatetxt"></textarea>
+        </td>
+        <td type="text"> Communication Skills</td>
+        <td>
+          <textarea type="text" id="communicationSkillstxt"></textarea>
+
+        </td>
+        <td type="text"> Economics and Project Management</td>
+        <td>
+          <textarea type="text" id="economicsAndProjectManagementtxt"></textarea>
+
+        </td>
+      </tr>
+      <tr>
+        <td type="text"> Design</td>
+        <td>
+          <textarea type="text" id="designtxt"></textarea>
+
+        </td>
+        <td type="text"> Professionalism</td>
+        <td>
+          <textarea type="text" id="professionalismtxt"></textarea>
+
+        </td>
+        <td type="text"> Life-Long Learning</td>
+        <td>
+          <textarea type="text" id="lifeLongLearningtxt"></textarea>
+
+        </td>
+      </tr>
+      <!-- <caption type="text">
+ Notation: where x be I: Introductory, D: Intermediate, A: Advanced, or empty.
+  I – The instructor will introduce the topic at the level required. It is not necessary for the student to have seen the material before.
+  D – There may be a reminder or review, but the student is expected to have seen and been tested on the material before taking the course.
+  A – It is expected that the student can apply the knowledge without prompting (e.g. no review).
+</caption> -->
+
+    </table>
+    <br>
+
+    <table id="general-learning-second-table">
+      <tr>
+        <td type="text"> Knowledge Base</td>
+        <td>
+          <select id="knowledgeBase">
+            <option value="empty"></option>
+            <option value="D">D</option>
+            <option value="A">A</option>
+            <option value="i">I</option>
+
+          </select>
+        </td>
+        <td type="text"> Use of Engineering Tools</td>
+        <td>
+          <select id="engineeringTool">
+            <option value="empty"></option>
+            <option value="D">D</option>
+            <option value="A">A</option>
+            <option value="i">I</option>
+
+          </select>
+        </td>
+        <td type="text"> Impact on Society and Enviroment</td>
+        <td>
+          <select id="impactSocietyEnvironment">
+            <option value="empty"></option>
+            <option value="D">D</option>
+            <option value="A">A</option>
+            <option value="i">I</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td type="text"> Problem Analysis</td>
+
+        <td>
+          <select id="problemAnalysis">
+            <option value="empty"></option>
+            <option value="D">D</option>
+            <option value="A">A</option>
+            <option value="i">I</option>
+
+          </select>
+        </td>
+        <td type="text"> Individual and Team work</td>
+        <td>
+          <select id="individualTeamWork">
+            <option value="empty"></option>
+            <option value="D">D</option>
+            <option value="A">A</option>
+            <option value="I">I</option>
+
+          </select>
+        </td>
+        <td type="text">Ethics and Equity</td>
+        <td>
+          <select id="ethicsEquity">
+            <option value="empty"></option>
+            <option value="D">D</option>
+            <option value="A">A</option>
+            <option value="I">I</option>
+
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td type="text"> Investigation</td>
+        <td>
+          <select id="investigate">
+            <option value="empty"></option>
+            <option value="D">D</option>
+            <option value="A">A</option>
+            <option value="I">I</option>
+        </td>
+        <td type="text"> Communication Skills</td>
+        <td>
+          <select id="communicationSkills">
+            <option value="empty"></option>
+            <option value="D">D</option>
+            <option value="A">A</option>
+            <option value="I">I</option>
+          </select>
+        </td>
+        <td type="text"> Economics and Project Management</td>
+        <td>
+          <select id="economicsAndProjectManagement">
+            <option value="empty"></option>
+            <option value="D">D</option>
+            <option value="A">A</option>
+            <option value="I">I</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td type="text"> Design</td>
+        <td>
+          <select id="design">
+            <option value="empty"></option>
+            <option value="D">D</option>
+            <option value="A">A</option>
+            <option value="I">I</option>
+          </select>
+        </td>
+        <td type="text"> Professionalism</td>
+        <td>
+          <select id="professionalism">
+            <option value="empty"></option>
+            <option value="D">D</option>
+            <option value="A">A</option>
+            <option value="I">I</option>
+          </select>
+        </td>
+        <td type="text"> Life-Long Learning</td>
+        <td>
+          <select id="lifeLongLearning">
+            <option value="empty"></option>
+            <option value="D">D</option>
+            <option value="A">A</option>
+            <option value="I">I</option>
+          </select>
+        </td>
+      </tr>
+      <div id="outline-notation">
+        <h4>Notation: where x be I: Introductory, D: Intermediate, A: Advanced, or empty.</h4>
+        <p>I – The instructor will introduce the topic at the level required. It is not necessary for the student to have seen the material before.</p>
+        <p>D – There may be a reminder or review, but the student is expected to have seen and been tested on the material before taking the course.</p>
+        <p>A – It is expected that the student can apply the knowledge without prompting (e.g. no review).</p>
+      </div>
+
+    </table>
+
+
+    <table id="evaluation-table">
+      <h2 id="evaluation-title">Evaluation</h2>
+
+      <p id="evaluation-paragraph">To obtain a passing grade in the course, a mark of 50% or more must be achieved on the final examination as well as on the laboratory. A final examination or laboratory mark < 50% will result in a final course grade of 48% or less.</p>
+
+      <tr>
+        <th id="evaluation-component">Course Component</th>
+        <th id="evaluation-weight">Weight</th>
+      </tr>
+      <tr>
+        <td>Homework Assigment</td>
+        <td><input class="box" id="homeworkAssigmentsEvaluation" type="number"> % </td>
+      </tr>
+      <tr>
+        <td>Quizzes</td>
+        <td><input class="box" id="quizzes" type="number"> % </td>
+      </tr>
+      <tr>
+        <td>Laboratory</td>
+        <td><input class="box" id="laboratory" type="number"> % </td>
+      </tr>
+      <tr>
+        <td>Midterm Test</td>
+        <td><input class="box" id="midtermTest" type="number"> % </td>
+      </tr>
+      <tr>
+        <td>Final Examination</td>
+        <td><input class="box" id="finalExamination" type="number"> % </td>
+      </tr>
+      
+    </table>
+
+
+
+    <table id="course-topics-table">
+      <tr>
+        <th id="course-topics-th1">Course Topics and Specific Learning Outcomes</th>
+        <th id="course-topics-th2">CEAB Graduate Attributes Indicators</th>
+      </tr>
+      <tr>
+        <td>
+          <p>1. Topic one: At the end of this section, students will be able to:</p>
+          <textarea class="box2" id="topicOneR1"></textarea>
+          <textarea class="box2" id="topicOneR2"></textarea>
+        </td>
+        <td><input class="topics-box" id="ceab1"> </td>
+      </tr>
+      <tr>
+        <td>
+          <p>2. Topic Two: At the end of this section, students will be able to:</p>
+          <textarea class="box2" id="topicTwoR1"></textarea>
+          <textarea class="box2" id="topicTwoR2"></textarea>
+        </td>
+        <td><input class="topics-box" id="ceab2"> </td>
+      </tr>
+      <tr>
+        <td>
+          <p>3. Topic Three: At the end of this section, students will be able to:</p>
+          <textarea class="box2" id="topicThreeR1"></textarea>
+          <textarea class="box2" id="topicThreeR2"></textarea>
+        </td>
+        <td><input class="topics-box" id="ceab3"> </td>
+      </tr>
+      <tr>
+        <td>
+          <p>4. Topic Four: At the end of this section, students will be able to:</p> 
+          <textarea class="box2" id="topicFourR1"></textarea>
+          <textarea class="box2" id="topicFourR2"></textarea>
+        </td>
+        <td><input class="topics-box" id="ceab4"> </td>
+      </tr>
+
+
+    </table>
+
+
+    <table id="outline-last-table">
+      <tr>
+        <td>
+          <h2 id="text">Homework Assigments:</h2>
+          <textarea type="text" id="homeworkAssigments"></textarea>
+        </td>
+
+        <td>
+          <h2 id="text" ;>Quizzes:</h2>
+          <textarea type="text" id="quizzes2"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+
+        <td>
+          <h2 id="text" ;>Labratory:</h2>
+          <textarea type="text" id="laboratory2"></textarea>
+        </td>
+
+        <td>
+          <h2 id="text" ;>Midterm Test:</h2>
+          <textarea type="text" id="midtermTest2"></textarea>
+        </td>
+
+      </tr>
+
+
+      <tr>
+
+        <td>
+          <h2 id="text" ;>Final Examination:</h2>
+          <textarea
+            id="finalExamination"> The final examination will be take place during the regular examination period. </textarea>
+
+        </td>
+
+        <td>
+          <h2 id="text" ;> Late Submission Policy</h2>
+          <textarea type="text" id="lateSubmissionPolicy"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+
+        <td>
+          <h2 id="text" ;>Assigment Submission Locker:</h2>
+          <textarea id="assigmentSubmissionLocker">  </textarea>
+
+        </td>
+
+        <td>
+          <h2 id="text" ;> Use of English</h2>
+          <textarea id="useOfEnglish"
+            readonly>: In accordance with Senate and Faculty Policy, students may be penalized up to 10% of the marks on all assignments, tests,
+and examinations for improper use of English. Additionally, poorly written work with the exception of the final examination may be returned without grading. 
+If resubmission of the work is permitted, it may be graded with marks deducted for poor English and/or late submission.</textarea>
+        </td>
+      </tr>
+
+      <tr>
+
+        <td>
+          <h2 id="text" ;>Attendance:</h2>
+          <textarea id="attendance"
+            readonly> Any student who, in the opinion of the instructor, is absent too frequently from class, laboratory, 
+or tutorial periods will be reported to the Dean (after due warning has been given). On the recommendation of the department, and with the 
+permission of the Dean, the student will be debarred from taking the regular final examination in the course. </textarea>
+
+        </td>
+
+        <td>
+          <h2 id="text" ;>Absence Due to Illness or Other Circumstances</h2>
+          <textarea id="absence" readonly>Students should immediately consult with the instructor or department Chair if they have any problems that could affect their performance in the course. Where appropriate, the problems should be documented 
+(see the attached “Instructions for Students Unable to Write Tests or Examinations or Submit Assignments as Scheduled”). The student should seek advice from 
+the instructor or department Chair regarding how best to deal with the problem. Failure to notify the instructor or department Chair immediately (or as soon as possible thereafter)
+will have a negative effect on any appeal.
+For more information concerning medical accommodations, see the relevant section of the Academic Handbook:
+http://www.uwo.ca/univsec/pdf/academic_policies/appeals/accommodation_medical.pdf
+
+For more information concerning accommodations for religious holidays, see the relevant section of the Academic Handbook:
+http://www.uwo.ca/univsec/pdf/academic_policies/appeals/accommodation_religious.pdf
+
+</textarea>
+        </td>
+      </tr>
+
+
+
+
+      <tr>
+        <td>
+          <h2 id="text" ;>Missed Midterm Examination:</h2>
+          <textarea id="missedMidterm" readonly> If a student misses a midterm examination, she or he must follow the Instructions for Students Unable to Write Tests and provide documentation to Undergraduate Services Office within 24 hours of the missed test. 
+If accommodation is granted, the department will decide whether to provide a make-up test or allow reweighting of the test, where reweighting means the marks normally allotted for the midterm will be added to the final exam. 
+If no reasonable justification for missing the test can be found, then the student will receive a mark of zero for the test.
+If a student is going to miss the midterm examination for religious reasons, they must inform the instructor in writing within 48 hours of the announcement of the exam date or they will be required to write the exam. 
+</textarea>
+
+        </td>
+
+        <td>
+          <h2 id="text" ;>Cheating and Plagiarism</h2>
+          <textarea id="cheatingAndPlagiarism" readonly>: Students must write their essays and assignments in their own words.
+Whenever students take an idea or a passage from another author, they must acknowledge their debt both by using quotation marks
+where appropriate and by proper referencing such as footnotes or citations. 
+University policy states that cheating, including plagiarism, is a scholastic offence. The commission of a scholastic offence is attended by academic penalties, 
+which might include expulsion from the program. If you are caught cheating, there will be no second warning.
+All required papers may be subject to submission for textual similarity review to commercial plagiarism-detection software under license
+to the University for the detection of plagiarism. All papers submitted will be included as source documents on the reference database for the purpose of detecting plagiarism of papers subsequently submitted to the system. 
+Use of the service is subject to the licensing agreement, currently between the University of Western Ontario and Turnitin.com (http://www.turnitin.com).
+Scholastic offences are taken seriously and students are directed to read the appropriate policy, specifically, the definition of what constitutes a Scholastic Offence, in the relevant section of the Academic Handbook:
+http://www.uwo.ca/univsec/pdf/academic_policies/appeals/scholastic_discipline_undergrad.pdf
+</textarea>
+        </td>
+      </tr>
+
+      <tr>
+
+        <td>
+          <h2 id="text" ;>Use Of Electronic Devices:</h2>
+          <textarea type="text" id="useOfElectronicDevices"> </textarea>
+        </td>
+
+        <td>
+          <h2 id="text" ;>Use of Personal Devices ("Clickers")</h2>
+          <textarea type="text" id="useofPersonalDevices"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+
+        <td>
+          <h2 id="text" ;>Policy on Repeating All Components of a Course</h2>
+          <textarea id="policy"
+            readonly> Students who are required to repeat an Engineering course must repeat all components of the course. No special permissions will be granted enabling a student to retain laboratory, assignment, or test marks from previous years. Previously completed assignments and laboratories cannot be resubmitted by the student for grading in subsequent years.</textarea>
+        </td>
+
+        <td>
+          <h2 id="text" ;>Internet and Electronic Mail</h2>
+          <textarea id="internetAndElectronicMail"
+            readonly> Students are responsible for regularly checking their Western e mail and the course web site (https://owl.uwo.ca/portal/) and making themselves aware of any information that is posted about the course.</textarea>
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>
+          <h2 id="text" ;>Accessibility</h2>
+          <textarea id="Accessibility"
+            readonly> Please contact the course instructor if you require material in an alternate format or if any other arrangements can make this course more accessible to you. You may also wish to contact Services for Students with Disabilities (SSD) at 519-661-2111 ext. 82147 for any specific question regarding an accommodation.</textarea>
+        </td>
+
+        <td>
+          <h2 id="text" ;>Support Services</h2>
+          <textarea id="supportServices" readonly> Office of the Registrar, http://www.registrar.uwo.ca/
+Student Development Centre, http://www.sdc.uwo.ca/
+Engineering Undergraduate Services, http://www.eng.uwo.ca/undergraduate/
+USC Student Support Services, http://westernusc.ca/services/
+</textarea>
+        </td>
+      </tr>
+    </table>
+
+
+
+    <div id="continue">
+      <!-- <button id="register-button">Register</button>
+       <button id="login-button">Login</button> -->
+    </div>
+  </div>
+
+
+  <p id="date_time_button"></p>
+  <p id="logged-in-username"></p>
+
+  <!-- <button id="saveButton" onclick="updateData()">Save</button> -->
+
+  <button id="saveButton" onclick="saveValue()"> Save</button>
+  <!-- //+ ' ' +document.getElementById('logged-in-username').innerHTML -->
+
+
+
+  <script defer type="module" src="script.js"></script>
+  <script defer type="module" src="home-script.js"></script>
+
+
+
+</body>
+
+</html>
+
+<p id="date_time_button"></p>
+<!-- <button id = "saveButton" onclick="document.getElementById('date_time_button').innerHTML = Date()"> Save</button> -->
+<script defer type="module" src="script.js"></script>
+</body>
+
+</html>
+<script>
+  function saveValue() {
+    // Get the value that's displayed
+    document.getElementById('date_time_button').innerHTML = Date() + " " + document.getElementById('logged-in-username').innerHTML;
+
+    var data = document.getElementById('date_time_button').innerHTML;
+    console.log("Data: " + data);
+    console.log("Successful Test: " + document.getElementById('date_time_button').innerHTML);
+    // Store the value in a variable or send it to a backend server
+    // Here, we'll just display it in the console
+  }
+
+
+
+
+</script>
+
+
+<!-- function saveValue() {
+    // Get the value that's displayed
+    document.getElementById('date_time_button').innerHTML = Date()+" " +document.getElementById('logged-in-username').innerHTML ;
+
+    var data = document.getElementById('date_time_button').innerHTML;
+    console.log("Data: " + data);
+    console.log("Successful Test: " + document.getElementById('date_time_button').innerHTML);
+    
+    // Store the value in a variable or send it to a backend server
+    // Here, we'll just display it in the console
+  }
+
+
+
+
+</script>
+ -->

@@ -1,0 +1,175 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+textarea{
+height: 75px;
+width: 500px;
+
+}
+
+
+
+
+.inline-block{
+    display: inline-block;
+}
+
+
+
+
+select{
+    width: 70px; height: 40px
+}
+    s
+
+.text{
+    font-size: medium;
+    
+}
+.box{
+    width: 70px; height: 45px;
+    font-size: medium;
+    
+    
+}
+
+.input{
+    width: 40px;height: 30px;
+}
+
+
+
+.box2{
+    width: 500px; height: 30px;
+    font-size: medium;
+
+    white-space: pre-wrap;    
+}
+.inline{
+    display: inline-block; 
+}
+
+table{
+    padding: auto;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#page-title {
+    font-size: 2.5em;
+}
+
+#main-title {
+    font-size: 2.5em;
+    /* margin-bottom: 10%; */
+}
+
+#main {
+    height: 100vh;
+    min-width: 500px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+#label{
+    font-size: .5em;
+
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    border-radius: 5px;
+    margin: 5%;
+}
+
+#form > input {
+    height: 12%;
+    width: 60%;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 4% 100%;
+}
+
+#continue {
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-top: 4%;
+}
+
+#continue > button {
+    height: 80%;
+    width: 40%;
+    margin: 0px 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#continue > button:hover {
+    background-color: lightgray;
+}
+
+#continue > button:active {
+    background-color: rgba(211, 211, 211, 0.655);
+}
+
+
+div {
+    display: flex;
+    align-items: center;
+  }
+  h3,
+  input {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .textarea2{
+  
+    width: 1400px;
+    height: 75px;
+
+  }
+
+
+
+
+
+  h4 {
+
+    display: inline-block;
+    
+  }
+  caption {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .label{
+font-weight:bolder;
+
+
+  }

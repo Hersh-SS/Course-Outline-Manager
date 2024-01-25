@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#allOutlines-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+#allOutlines-h3 {
+    padding-left: 20px;
+    font-weight: 200;
+}
+
+#allOutlines-p {
+    padding-left: 20px;
+    font-weight: 200;
+}
+

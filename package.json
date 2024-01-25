@@ -1,0 +1,26 @@
+{
+  "name": "se3350-course-outline-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShaimaaAliECE/se3350_groupproject-se3350-team-16.git"
+  },
+  "author": "Team 16",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShaimaaAliECE/se3350_groupproject-se3350-team-16/issues"
+  },
+  "homepage": "https://github.com/ShaimaaAliECE/se3350_groupproject-se3350-team-16#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "firebase": "^9.17.1",
+    "nodemon": "^2.0.20"
+  }
+}

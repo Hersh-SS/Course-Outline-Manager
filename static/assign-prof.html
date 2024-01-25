@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Outlines Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <h1 id="page-title">COURSE OUTLINES MANAGER</h1>
+        <h1 id="main-title">Assign Professor to Course</h1>
+
+        <label for="choose-courses">Choose Course:</label> <!-- Dropdown list to select course -->
+        <select name="choose-courses" id="choose-courses">
+          <option value="SE 3350">SE 3350</option>
+          <option value="SE 3313">SE 3313</option>
+          <option value="SE 3314">SE 3314</option>
+          <option value="SE 3310">SE 3310</option>
+          <option value="SE 3353">SE 3353</option>
+          <option value="ECE 3375">ECE 3375</option>
+        </select>
+
+        <label for="assign-prof">Assign Professor:</label> <!-- Dropdown list to select prof -->
+        <select name="assign-prof" id="assign-prof">
+          <option value="Shaimaa Ali">Shaimaa Ali</option>
+          <option value="Kenneth McIsaac">Kenneth McIsaac</option>
+          <option value="John McLeod">John McLeod</option>
+          <option value="Fang Fang">Fang Fang</option>
+          <option value="Aleksander Essex">Aleksander Essex</option>
+          <option value="Roy Eagleson">Roy Eagleson</option>
+        </select>
+
+        <!-- <label>Test Course Assignment:</label>
+        <select id="myDropdown"></select> -->
+
+        <button id="confirm-button">Confirm</button>
+    </div>
+    <script defer type="module" src="script.js"></script>
+</body>
+</html>
